@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-birthstone: var(--font-birthstone);
+  --font-lora: var(--font-lora);
+  --font-dm-serif: var(--font-dm-serif);
+}
+
+.font-birthstone {
+  font-family: var(--font-birthstone), cursive;
+}
+
+.font-lora {
+  font-family: var(--font-lora), serif;
+}
+
+.font-dm-serif {
+  font-family: var(--font-dm-serif), serif;
+}
+
+:root {
+  --bg-color: #fdfaf5;
+  /* Warm paper color from the video */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #4a4a4a;
+  overflow-x: hidden;
+}
