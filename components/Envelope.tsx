@@ -67,7 +67,7 @@ export default function Envelope({ onOpen, isPlaying = false, toggleAudio }: Env
                 >
                     <div className="absolute inset-0 w-full h-full scale-110">
                         <Image
-                            src="/upperflap.png"
+                            src="/nupperflap.png"
                             alt="Top Flap"
                             fill
                             className="object-cover"

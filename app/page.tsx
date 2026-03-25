@@ -5,17 +5,17 @@ import Image from "next/image";
 import Envelope from "@/components/Envelope";
 
 import ganpatiImg from "@/app/assets/ganpati.png";
-import firstImageImg from "@/app/assets/firstImage.png";
+import firstImageImg from "@/app/assets/nfirstImage.png";
 import ringBoxImg from "@/app/assets/ringBox.png";
 import ringImg from "@/app/assets/ring.png";
 import layer9Img from "@/app/assets/layer9.png";
 import layer8Img from "@/app/assets/layer8.png";
-import imageTwoImg from "@/app/assets/imageTwo.png";
+import imageTwoImg from "@/app/assets/nnimageTwo.png";
 import swanImg from "@/app/assets/swan.png";
 import clockImg from "@/app/assets/clock.png";
 import kabutarImg from "@/app/assets/kabutar.png";
 import fullImg from "@/app/assets/full.png";
-import inviteesImg from "@/app/assets/invitees.png";
+import inviteesImg from "@/app/assets/ninvitees.png";
 import pinkRoseImg from "@/app/assets/pinkRose.png";
 import groupLogoImg from "@/app/assets/groupLogo.png";
 
@@ -29,7 +29,7 @@ function InvitationContent() {
   const boxScale = useTransform(scrollY, [0, 500], [1, 0.8]);
   const boxY = useTransform(scrollY, [0, 500], [0, -50]);
 
-  const ringScale = useTransform(scrollY, [0, 500], [1, 1.8]);
+  const ringScale = useTransform(scrollY, [0, 500], [0.8, 1.2]);
   const ringX = useTransform(scrollY, [0, 250, 2000, 2500], [0, 150, -20, 0]);
   const ringY = useTransform(scrollY, [0, 500], [0, 310]);
   const layerOpacity = useTransform(scrollY, [100, 400], [0, 1]);
@@ -67,7 +67,7 @@ function InvitationContent() {
   const birdY = useTransform(birdProgress, [0, 1], [0, -150]);      // Slight diagonal up
 
   useEffect(() => {
-    const targetDate = new Date("2026-02-19T09:00:00");
+    const targetDate = new Date("2026-04-19T09:00:00");
 
     const timer = setInterval(() => {
       const now = new Date();
@@ -110,7 +110,9 @@ function InvitationContent() {
             transition={{ delay: 1, duration: 1 }}
           >
             <p className="font-poppins tracking-tight capitalize text-sm text-[#633d5c]">Together With their family</p>
-            <h1 className="text-6xl font-birthstone text-[#f0bb19] mb-2">Abhay & Dhruvi</h1>
+            <h1 className="font-birthstone text-[#f0bb19] mb-2 text-center">
+              <span className="text-[56px]">Nandani</span> <span className="text-[32px] mx-1">&</span> <span className="text-[56px]">Shivam</span>
+            </h1>
           </motion.div>
         </div>
 
@@ -143,7 +145,7 @@ function InvitationContent() {
             <Image
               src={firstImageImg}
               alt="Couple"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
               priority
             />
           </motion.div>
@@ -226,7 +228,7 @@ function InvitationContent() {
               style={{ y: dateY }}
               className="text-[100px] leading-none font-dm-serif text-[#E9AD3E] whitespace-nowrap tracking-tighter"
             >
-              19 Feb
+              19 Apr
             </motion.h2>
             <motion.h2
               style={{ y: dateY }}
@@ -325,7 +327,7 @@ function InvitationContent() {
           <Image
             src={fullImg}
             alt="Decoration Bottom Left"
-            className="absolute -bottom-20 -left-14 w-72 z-20 blur-[6px]"
+            className="absolute -bottom-20 -left-14 w-72 z-20 blur-[3px]"
           />
         </div>
 
@@ -344,18 +346,18 @@ function InvitationContent() {
                 height="100%"
                 title="map"
                 scrolling="no"
-                src="https://maps.google.com/maps?q=Sardarnagar+Society+Comunity+Hall,+Rajkot&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Hotel+Atithi+Devo+Bhava,+Rajkot&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 style={{ filter: "grayscale(0.2) contrast(1.1) opacity(0.9)" }}
               ></iframe>
             </div>
 
             {/* Address & Button */}
             <div className="p-6 text-center">
-              <h3 className="font-poppins text-xl text-[#633d5c] mb-2">Sardarnagar Community Hall</h3>
-              <p className="text-[#633d5c] mb-6 text-sm font-poppins">Sardar Nagar, Rajkot, Gujarat</p>
+              <h3 className="font-poppins text-xl text-[#633d5c] mb-2">Hotel Atithi Devo Bhava</h3>
+              <p className="text-[#633d5c] mb-6 text-sm font-poppins">Rajkot, Gujarat</p>
 
               <a
-                href="https://www.google.com/maps/dir//Sardarnagar+Society+Comunity+Hall,+Rajkot+patel+boding,+26-1,+Sardar+Nagar,+Rd+2a,+Om+Nagar,+Rajkot,+Gujarat+360004/@22.2701913,70.7853247,15z"
+                href="https://www.google.com/maps/place/Hotel+ADB+%22Atithi+Devo+Bhava%22/@22.3446244,70.7876916,17z/data=!4m14!1m7!3m6!1s0x3959c9c6c50000ed:0xeb71b1a41a27067a!2sHotel+ADB+%22Atithi+Devo+Bhava%22!8m2!3d22.3446195!4d70.7902665!16s%2Fg%2F11c2nq9txq!3m5!1s0x3959c9c6c50000ed:0xeb71b1a41a27067a!8m2!3d22.3446195!4d70.7902665!16s%2Fg%2F11c2nq9txq?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-3 bg-[#633d5c] text-white font-serif rounded-2xl shadow-md hover:bg-[#633d5c] transition-colors"
@@ -389,7 +391,7 @@ function InvitationContent() {
           viewport={{ once: true }}
           className="relative z-10 mt-20"
         >
-          <Image src={groupLogoImg} alt="Group Logo" className="w-44 h-auto object-contain opacity-90 " />
+          <h2 className="text-6xl font-birthstone text-[#E9AD3E] mb-10">Kamdar Family</h2>
         </motion.div>
       </div>
     </main >
