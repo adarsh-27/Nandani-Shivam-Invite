@@ -111,7 +111,7 @@ function InvitationContent() {
           >
             <p className="font-poppins tracking-tight capitalize text-sm text-[#633d5c]">Together With their family</p>
             <h1 className="font-birthstone text-[#f0bb19] mb-2 text-center">
-              <span className="text-[56px]">Nandani</span> <span className="text-[32px] mx-1">&</span> <span className="text-[56px]">Shivam</span>
+              <span className="text-[56px]">Nandini</span> <span className="text-[32px] mx-1">&</span> <span className="text-[56px]">Shivam</span>
             </h1>
           </motion.div>
         </div>

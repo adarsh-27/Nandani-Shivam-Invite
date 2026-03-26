@@ -31,7 +31,7 @@ const dmSerifDisplay = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Nandani And Shivam | Engagement Invitation",
+  title: "Nandini And Shivam | Engagement Invitation",
   description: "Join us in celebrating our engagement ceremony",
 
 };
